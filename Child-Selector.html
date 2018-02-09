@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>Child Selector System - CSS Framework</title>
+<link rel="stylesheet" href="CSS/child-selector.css" type="text/css">
+
+
+<style>
+
+/* formating style */
+
+div>div{margin-bottom:10px; }
+
+div>div:nth-child(1){background-color:#999}
+div>div:nth-child(2n){ background-color:#aaa}
+div>div:nth-child(3n){ background-color:#bbb}
+div>div:nth-child(4n){ background-color:#ccc}
+div>div:nth-child(5n){ background-color:#ddd}
+div>div:nth-child(6n){ background-color:#eee}
+
+
+div>div:nth-child(1):before{content:" 1 "; white-space: pre; margin-right:6px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px;  background-color:#FFFF00;font:16px/1.4 Arial,sans-serif;}
+
+div>div:nth-child(2):before{content:" 2 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+
+div>div:nth-child(3):before{content:" 3 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+
+div>div:nth-child(4):before{content:" 4 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+
+div>div:nth-child(5):before{content:" 5 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+
+div>div:nth-child(6):before{content:" 6 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+div>div:nth-child(7):before{content:" 7 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+div>div:nth-child(8):before{content:" 8 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+div>div:nth-child(9):before{content:" 9 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+div>div:nth-child(10):before{content:" 10 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+div>div:nth-child(11):before{content:" 11 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+div>div:nth-child(12):before{content:" 12 "; white-space: pre; margin-right:5px;font:16px/1.4 Arial,sans-serif;-moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px;  background-color:#FFFF00;}
+
+
+</style>
+</head>
+
+<body>
+<div class="two">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum.
+</div>
+
+</div>
+<div class="three">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="four">
+<div> A Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>B Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>C Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>D Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="five">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="six">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="seven">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="eight">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="nine">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+
+<div class="ten">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="twelve">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+
+<div class="four right">
+<div> A Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>B Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>C Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>D Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="five right">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="six right">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+</div>
+<div class="two">
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+	<div class="two">
+	<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+	</div>
+</div>
+ <div class="three">
+ <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+	 <div class="two">
+	 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+	 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+	 </div>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nibh dui, vel ullamcorper ipsum. </div>
+ </div>
+</body>
+</html>
