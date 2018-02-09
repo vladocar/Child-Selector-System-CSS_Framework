@@ -2,7 +2,7 @@
 
 Child Selector System is experimental CSS Framework that use child selectors for making multiple simple (column) grid.
 
-This Framework has limited use and is mainly build for teaching purposes.
+This Framework has limited use and is mainly build for *teaching purposes*.
 
 The Framework has .one to .twelve columns elastic % based columns system. Note: .eleven is deliberately canceled.
 
@@ -11,14 +11,14 @@ Example class .three>div{ width:33.33% }
 All the nested divs inside the .three class div will become "styled" with 33,33% and they will make three column grid.
 
 Advantages:
- *Super small ( 0,31 kb )
- *Personalized main container (%, px, em)
- *Nested columns support
- *Easy to use.
- *Reduces the amount of generated HTML to minimum
+ * Super small ( 0,31 kb )
+ * Personalized main container (%, px, em)
+ * Nested columns support
+ * Easy to use.
+ * Reduces the amount of generated HTML to minimum
 
 Disadvantages:
- *Limited use (You can't build column larger then 50% (1/2) )
+ * Limited use (You can't build column larger then 50% (1/2) )
 
 
 Examples:
